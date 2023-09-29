@@ -122,6 +122,34 @@
 </section>
 <!-- End paper abstract -->
 
+  <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="content has-text-justified">
+      <p>
+This work aims to advance the field of SR by exploring wavelet-based networks. Unfortunately, this technique has received less attention despite its significant potential. 
+We seek to provide a fresh perspective and revive research by re-evaluating these approaches.
+Discrete Wavelet Transformation (DWT) enables an efficient image representation without losing information compared to its naive spatial representation, i.e., traditional RGB format.
+It does so by separating high-frequency details in distinct channels and reducing the spatial area of input image representation by a factor of 4.
+Therefore, a smaller receptive field is required to capture the input during feature extraction.
+Using DWT, like in DWSR and MWCNN, reduces the overall model size and computational costs while performing similarly to state-of-the-art image SR architectures.
+</p>
+<p>
+This work introduces a new Differential Wavelet Amplifier (DWA) module inspired by differential amplifiers from electrical engineering. 
+Differential amplifiers increase the difference between two input signals and suppress the common voltage shared by the two inputs, called Common Mode Rejection (CMR). 
+In other words, it mitigates the impact of noise (e.g., electromagnetic interference, vibrations, or thermal noise) affecting both source inputs while retaining valuable information and improving the integrity of the measured input signal.
+Our proposed DWA layer adapts this idea to deep learning and can be used as a drop-in module to existing SR models. 
+This work shows its effectiveness as exemplary for wavelet-based SR approaches.
+DWA leverages the difference between two convolutional filters with a stride difference to enhance relevant feature extraction in the wavelet domain, emphasizing local contrasts and suppressing common noise in the input signals.
+We demonstrate the effectiveness of DWA through extensive experiments and evaluations, showing improved performance compared to existing wavelet-based SR models without DWA:
+DWSR with DWA shows overall better performance w.r.t. PSNR and SSIM, and MWCNN with DWA achieves better SSIM scores with comparable PSNR values on the testing datasets Set5, Set14, and BSDS100.
+</p>
+      <p style="text-align:center;">
+        <img src="static/images/dwa.png" alt="MY ALT TEXT" width="50%" height="50%"/>
+      </p>
+      
+</div>
+  </div>
+</div>
 
 
 <!--BibTex citation -->
