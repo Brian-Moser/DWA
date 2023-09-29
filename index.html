@@ -125,6 +125,9 @@
   <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
     <div class="content has-text-justified">
+      <p style="text-align:center;">
+        <img src="static/images/dwa.png" alt="MY ALT TEXT" width="50%" height="50%"/>
+      </p>
       <p>
 This work aims to advance the field of SR by exploring wavelet-based networks. Unfortunately, this technique has received less attention despite its significant potential. 
 We seek to provide a fresh perspective and revive research by re-evaluating these approaches.
@@ -143,8 +146,12 @@ DWA leverages the difference between two convolutional filters with a stride dif
 We demonstrate the effectiveness of DWA through extensive experiments and evaluations, showing improved performance compared to existing wavelet-based SR models without DWA:
 DWSR with DWA shows overall better performance w.r.t. PSNR and SSIM, and MWCNN with DWA achieves better SSIM scores with comparable PSNR values on the testing datasets Set5, Set14, and BSDS100.
 </p>
+<p>
+  Our experimental analysis shows that DWA enables a direct application of DWSR and MWCNN to the input space by avoiding the DWT on the input image, which is an exciting property. 
+This application reduces the input channel-wise to 3 instead of 12 channels for RGB images while keeping the spatial reduction benefit of DWT.
+</p>
       <p style="text-align:center;">
-        <img src="static/images/dwa.png" alt="MY ALT TEXT" width="50%" height="50%"/>
+        <img src="static/images/ablation.png" alt="MY ALT TEXT" width="50%" height="50%"/>
       </p>
       
 </div>
